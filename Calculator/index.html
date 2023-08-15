@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <div class="header">
+            <h1>Calculator</h1>
+        </div>
+
+
+        <div id="input-values">
+
+        </div>
+
+
+
+        <div id="output-Values">
+
+        </div>
+
+    <div class="btn2">
+        <div class="Buttons">
+                <button type="button" id="1" class="btn" value=1 onclick="Values1(event)">1</button>
+                <button type="button" id="2" class="btn" value=2 onclick="Values1(event)">2</button>
+                <button type="button" id="3" class="btn" value=3 onclick="Values1(event)">3</button>
+                <button type="button" id="4" class="btn" value=4 onclick="Values1(event)">4</button>
+                <button type="button" id="5" class="btn" value=5 onclick="Values1(event)">5</button>
+            </div>
+            
+        <div class="Buttons">        
+            <button type="button" id="6" class="btn" value=6 onclick="Values1(event)">6</button>
+                <button type="button" id="7" class="btn" value=7 onclick="Values1(event)">7</button>
+                <button type="button" id="8" class="btn" value=8 onclick="Values1(event)">8</button>
+                <button type="button" id="9" class="btn" value=9 onclick="Values1(event)">9</button>
+                <button type="button" id="0" class="btn" value=0 onclick="Values1(event)">0</button>
+        </div>
+    </div>
+        <div class="Buttons" style="display: flex;flex-direction: column; width: 7vw; position: absolute;top: 40px;right: 375px;">
+ 
+                <button type="button" id="+" class="btn" value="+"onclick='calculate(event)' >+</button>
+                <button type="button" id="-" class="btn" value="-"onclick='calculate(event)'>-</button>
+                <button type="button" id="/" class="btn" value="/"onclick='calculate(event)'>/</button>
+                <button type="button" id="*" class="btn" value="*"onclick='calculate(event)'>*</button>
+                <button type="submit" id="Clear" class="btn1"  onclick="Clear()">Clear</button>
+                <button type="submit" id="Enter" class="btn1" onclick="Entered()">Enter</button>
+        </div>
+
+
+
+
+    </div>
+
+
+    <script src="index.js">
+    </script>
+</body>
+</html>

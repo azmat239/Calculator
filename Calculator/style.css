@@ -1,0 +1,93 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+background: black;
+font-size: larger;
+font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    background-color:darkslategray;
+    height:85vh;
+    width: 400px;
+
+    padding: 40px;
+    margin:auto;
+    margin: 20px 30%;
+    border-radius: 80px;
+}
+
+.header{
+    text-align: center;
+}
+
+#input-values{
+height: 3vh;
+width: 30vw;
+margin-top: 10px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: white;
+color: black;
+text-align: center;
+padding: 9px;
+border-radius: 30px;
+background-color: rgba(153, 50, 204, 0.457);
+}
+
+#output-Values{
+    height: 3vh;
+    width: 30vw;
+    margin-top: 20px;
+    font-family:  'Trebuchet MS', sans-serif;
+    background-color:white;
+    color: black;
+    text-align: center;
+    padding: 9px;
+    border-radius: 30px;
+    background-color: rgba(153, 50, 204, 0.533);
+
+}
+.Buttons{
+    margin-top: 15px;
+    background-color: rgb(21, 122, 142);
+    border-radius: 80px;
+    padding: 5px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.btn2{
+    padding: 20px;
+}
+
+.Buttons .btn{
+    padding: 20px;
+    background-color: rgb(21, 122, 142);
+    border-radius: 80px;
+}
+
+.Buttons .btn1{
+    padding: 20px;
+    background-color: rgb(21, 122, 142);
+    border-radius: 80px;
+}
+
+.btn{
+    font-size: xx-large;
+    padding: 14px;
+    margin: 6px;
+}
+
+.btn:hover,.btn1:hover{
+    background-color: teal;
+    padding: 20px;
+    color: darkred;
+}
+
+.btn1{
+    font-size: x-large;
+    padding: 14px;
+    margin: 2px;
+}
+
