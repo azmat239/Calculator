@@ -32,15 +32,10 @@ function calculate(event){
     }
     else if(String(event.target.value) == '*'){
         sign=event.target.value;
-        if(sum==0){
-            sum=1;
-        }
     }
     else if(String(event.target.value) == '/'){
         sign=event.target.value;
-        if(sum==0){
-            sum=1;
-        }
+       
     }
     else{
         alert('invalid')
@@ -59,6 +54,16 @@ function Clear(){
 
 
 function Entered(){
+    if(sum == NaN || num == NaN){
+        sum=0;
+        num=0;
+    }
+    if(sum== Infinity || sum == -Infinity){
+        sum=0;
+        num=0;
+    }
+    
+   
     if(String(sign) == '+' ){
         sum += num;
         Enter.innerText =sum;
@@ -70,12 +75,15 @@ function Entered(){
     }
 
     else if(String(sign) == '/' ){
-        sum /= num;
+        sum = sum/num;
         Enter.innerText =sum;
 
     }
     
     else if(String(sign) == '*' ){
+        if(sum==0){
+            sum=1;
+        }
         sum *= num;
         Enter.innerText =sum;
 
@@ -89,11 +97,5 @@ function Entered(){
     Enter.innerText = sum ;
 }
 
-if(sum == NaN || num == NaN){
-    sum=0;
-}
-if(sum== Infinity || num == Infinity){
-    sum=0;
-}
 
 

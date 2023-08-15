@@ -1,100 +1,86 @@
 *{
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
-
 body{
-background-image: url('images/bg.jpg');
-background-repeat: no-repeat;
-background-size:cover;
-background-position:20px;
-font-size: larger;
-font-family: 'Times New Roman', Times, serif;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    background-image:url('images/bg.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 .container{
-    /* background-color:rgba(65, 21, 142, 0.331); */
-    background-color:rgba(255, 255, 255, 0.235);
-    height:85vh;
-    width: 400px;
-
-    padding: 40px;
-    margin:auto;
-    margin: 20px 30%;
-    border-radius: 80px;
+    height: 75vh;
+    width: 50vw;
+    padding: 30px;
+    background-color: rgba(215, 250, 215, 0.622);
+    text-align: center;
+    margin: auto;
+    border-radius: 8%;
 }
-
+span{
+    color: rgb(147, 6, 6);
+    position: relative;
+    top: 12px;    
+}
 .header{
-    text-align: center;
-}
-
-#input-values{
-height: 3vh;
-width: 30vw;
-margin-top: 10px;
-font-family:Georgia, 'Times New Roman', Times, serif;
-font-weight: bolder;
-background-color: white;
-color: black;
-text-align: center;
-padding: 9px;
-border-radius: 30px;
-background-color: rgba(153, 50, 204, 0.457);
-}
-
-#output-Values{
-    height: 3vh;
-    width: 30vw;
-
-    margin-top: 20px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-font-weight: bolder;
-    background-color:white;
-    color: black;
-    text-align: center;
-    padding: 9px;
-    border-radius: 30px;
-    background-color: rgba(153, 50, 204, 0.533);
-
-}
-.Buttons{
-    margin-top: 15px;
-    background-color: rgb(21, 122, 142);
-    border-radius: 80px;
-    padding: 5px;
-    display: inline-flex;
-    justify-content: space-between;
-}
-.btn2{
-    padding: 20px;
-}
-
-.Buttons .btn{
-    padding: 20px;
-    background-color: rgb(21, 122, 142);
-    border-radius: 80px;
-}
-
-.Buttons .btn1{
-    padding: 20px;
-    background-color: rgb(21, 122, 142);
-    border-radius: 80px;
+    color: rgba(0, 255, 195, 0.623);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .btn{
-    font-size: xx-large;
-    padding: 14px;
-    margin: 6px;
-}
-
-.btn:hover,.btn1:hover{
-    background-color: teal;
-    padding: 20px;
-    color: darkred;
-}
-
-.btn1{
-    font-size: x-large;
-    padding: 14px;
+    padding: 15px;
+    border-radius: 30%;
+    background-color: rgba(144, 152, 6, 0.683);
     margin: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.btn:hover{
+    background-color: rgba(255, 0, 0, 0.598);
+    color: rgba(255, 255, 255, 0.648);
+    
 }
 
+#input-values,
+#output-Values{
+    height: 3vh;
+    width: 50vw;
+    margin: 8px;
+    background: rgba(82, 41, 108, 0.582);
+    border-radius: 30px;
+    font-family: Times, serif;
+    font-weight: bolder;
+    text-align: center;
+    padding: 4px;
+}
+@media screen and (min-width : 950px){
+    body{
+        height: 600px;
+        width: 100%;
+    }
+    .container{
+        height: 83vh;
+        width: 35vw;
+        padding: 30px;
+    }
+    .btn{
+        padding: 20px;
+        margin:5px;
+        font-family:'Courier New', Courier, monospace;
+ 
+    }
+    #input-values,
+    #output-Values{
+    height: 3vh;
+    width: 30vw;
+    margin: 2px;
+    padding: 4px;
+}
+
+span{
+    top: 6px;
+}
+}
