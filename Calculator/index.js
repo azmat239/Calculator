@@ -32,9 +32,11 @@ function calculate(event){
     }
     else if(String(event.target.value) == '*'){
         sign=event.target.value;
+        num=1;
     }
     else if(String(event.target.value) == '/'){
         sign=event.target.value;
+        num=1;
        
     }
     else{
